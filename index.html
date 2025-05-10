@@ -4,11 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131: Dynamic Web Fundamentals</title>
+    <title>WDD 131 – Dynamic Web Fundamentals - Tojofenitra</title>
+    <meta name="description"
+        content="Tojofenitra Fabrice Andriambololontseheno's homepage for WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Tojofenitra Fabrice Andriambololontseheno">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
-    <h1>WDD 131: Dynamic Web Fundamentals</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span>Tojofenitra Fabrice</span></h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://linkedin.com/" class="active">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/7?lang=eng&id=p12#p12">Scripture</a>
+                </li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.png" class="profil" alt=" Tojo profile" width="120" height="150">
+            <div class="country">
+                <p>Hello! My name is Tojofenitra. I'm from Madagascar. I'm currently live in Antananarivo. I'm a student
+                    of
+                    BYU-Idaho Online. My hobbies are
+                    swimming, listening to music and travelling. I love spending fun time with my family. I speak
+                    Malagasy.
+                </p>
+                <h3>Madagascar</h3>
+                <figure>
+                    <img src="images/flag.png" class="flag" alt="Madagascar" width="140">
+                    <figcaption>Official flag of Madagascar</figcaption>
+                </figure>
+                <p>Madagascar is an island country comprising the island of Madagascar and numerous smaller peripheral
+                    islands. Lying off the southeastern coast of Africa, it is the world's fourth largest island, the
+                    second-largest island country and the 44th largest country in the world. Its capital and largest
+                    city is
+                    Antananarivo.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="">Dev.to Community</a></li>
+                <li><a href="">Smashing Magazine</a></li>
+                <li><a href="">CSS Tricks</a></li>
+                <li><a href="">W3 Schools</a></li>
+                <li><a href="">Udemy</a></li>
+                <li><a href="">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> - Tojofenitra Fabrice Andriambololontseheno - Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 
 </html>

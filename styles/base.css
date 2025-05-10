@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+header {
+    background-color: #000;
+}
+
+h1 {
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    text-align: center;
+    color: #ccc;
+}
+
+h1 span {
+    color: #f8d53b;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(250, 250, 250, 0.1);
+    color: #fff;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding: 20px;
+}
+
+main .card {
+    border: 1px solid #000;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main h2 {
+    background-color: #4e0101;
+    padding: .65rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+main h3,
+p {
+    padding: 10px;
+}
+
+h3 {
+    padding-top: 15px;
+    margin-left: 100px;
+    border-bottom: 1px solid #ccc;
+    width: 350px;
+    text-align: center;
+}
+
+main .profil {
+    float: right;
+    margin: 10px;
+    height: auto;
+}
+
+main figure {
+    margin-top: 15px;
+    float: left;
+    padding: 10px;
+}
+
+main img {
+    border: 1px solid #ccc;
+    padding: 0.1px;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+main ul {
+    padding: 80px 30px;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #ccc;
+}
+
+#lastModified {
+    font-size: 0.75rem;
+    color: #f8d53b;
+    padding-top: 5px;
+}
+
+/* larger/wider views **************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+        /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 20px;
+    }
+
+    .country {
+        width: 500px;
+        padding-top: 10px;
+    }
+}

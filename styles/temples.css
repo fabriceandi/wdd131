@@ -12,8 +12,8 @@ body {
 
 header {
     background-color: #5a0303;
-    display: grid;
-    grid-gap: 1rem;
+    /*display: grid;
+    grid-gap: 1rem;*/
     padding: 20px;
     color: #fff;
     font-size: 2rem;
@@ -28,6 +28,11 @@ main {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1px;
 }
 
 nav ul {

@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+header,
+footer {
+    background-color: #d68100;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.hero {
+    background-color: #000;
+}
+
+.hero img {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    color: #4475df;
+    background-color: #fff;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.data,
+.weather {
+    text-align: center;
+}
+
+ul li {
+    padding: 5px;
+}
+
+.weather .img {
+    width: 15%;
+    height: auto;
+}
+
+.weather {
+    margin-bottom: 15px;
+}
+
+.weather-icon {
+    display: none;
+}

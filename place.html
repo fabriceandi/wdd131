@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Dynamic Web Fundamentals - Italy Page</title>
+    <meta name="description" content="Italy page for WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Tojofenitra Fabrice Andriambololontseheno">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Italy</h1>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <img src="images/hero-small.webp" alt="Colisee image" width="500" height="750">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 301,230 sq km</li>
+                <li><strong>Population:</strong> 59,146,260</li>
+                <li><strong>Capital:</strong> Rome</li>
+                <li><strong>Language:</strong> Italian</li>
+                <li><strong>Currency:</strong> Euro</li>
+                <li><strong>Time Zone:</strong> UTC+1</li>
+                <li><strong>Calling Code:</strong> +39</li>
+                <li><strong>Internet TLD:</strong> .it</li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2 class="title">Weather <span class="weather-icon"><img src="images/icon.svg" alt="weather icon"></span>
+            </h2>
+            <img src="images/weather-icon.svg" class="img" alt="Weather">
+            <ul>
+                <li><strong>Temperature:</strong> 7°C</li>
+                <li><strong>Conditions:</strong> Mostly Cloudy</li>
+                <li><strong>Wind:</strong> 15 km/h</li>
+                <li><strong>Wind Chill: </strong><span id="chill"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> - Tojofenitra Fabrice Andriambololontseheno - Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>

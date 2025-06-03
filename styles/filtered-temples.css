@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: #5a0303;
+    /*display: grid;
+    grid-gap: 1rem;*/
+    padding: 20px;
+    color: #fff;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: rgba(250, 250, 250, 0.1);
+    color: #000;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open a {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+    place-items: center;
+}
+
+figure {
+    background-color: #fff;
+    padding: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+footer {
+    background-color: #5a0303;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#lastModified {
+    font-size: 0.75rem;
+    padding-top: 5px;
+}
+
+section {
+    margin-top: 10px;
+    background-color: #ccc;
+    padding: 1rem;
+}
+
+p {
+    padding-top: 5px;
+    font-size: 13px;
+}

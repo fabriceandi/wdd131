@@ -1,0 +1,38 @@
+:root {
+    --fontFamily: "Lora", serif;
+    --colorParagraph: #1b1212;
+    --colorHeading: #b78e06;
+    --colorHeadings: #7b3f00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    color: #1b1212;
+    padding: 10px;
+}
+
+h1,
+h2,
+p {
+    padding: 10px;
+}
+
+h1 {
+    color: var(--colorHeading);
+}
+
+h2 {
+    color: var(--colorHeadings);
+}
+
+div p {
+    font-size: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}

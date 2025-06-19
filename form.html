@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form</title>
+    <meta name="description" content="Product Review Form for WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Tojofenitra Fabrice Andriambololontseheno">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Product Review</h1>
+    </div>
+    <div>
+        <form action="review.html" method="get" class="form">
+            <label>Product Name*
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product... </option>
+                </select>
+            </label>
+            <div>Overall Rating*</div>
+            <label><input type="radio" id="one" name="rating" value="1" required>&star;</label>
+            <label><input type="radio" id="two" name="rating" value="2" required>&star;&star;</label>
+            <label><input type="radio" id="three" name="rating" value="3" required>&star;&star;&star;</label>
+            <label><input type="radio" id="four" name="rating" value="4" required>&star;&star;&star;&star;</label>
+            <label><input type="radio" id="five" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+            <label>Date of Installation*<input type="date" name="date" id="date" required></label>
+            <div>Useful Features <span>(Check all that apply)</span></div>
+            <label><input type="checkbox" name="features" value="yes" id="durability">Durability</label>
+            <label><input type="checkbox" name="features" value="yes" id="use">Ease of Use</label>
+            <label><input type="checkbox" name="features" value="yes" id="performance">Performance</label>
+            <label><input type="checkbox" name="features" value="yes" id="design">Design</label>
+            <label>Written Review<textarea name="review" id="review"></textarea></label>
+            <label>User Name (Optional)<input type="text" name="username" id="username"></label>
+            <input type="submit" value="Post Review">
+        </form>
+    </div>
+    <footer>
+        <p><span id="currentyear"></span> - Tojofenitra Fabrice Andriambololontseheno - Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+</body>
+
+</html>

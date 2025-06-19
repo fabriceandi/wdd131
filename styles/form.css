@@ -1,0 +1,102 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.heading {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 0.2rem;
+    margin-top: 1rem;
+}
+
+.form {
+    margin-top: 1rem;
+    padding: .5rem 2%;
+    background-color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.form div {
+    padding-top: 1rem;
+    font-size: .9rem;
+    margin-bottom: -1rem;
+}
+
+.form div span {
+    font-style: italic;
+    font-size: 10px;
+}
+
+.form label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.form select {
+    width: 100%;
+    max-width: 380px;
+    padding: 0.8rem;
+}
+
+.form input[type="date"],
+.form textarea,
+.form input[type="text"] {
+    display: block;
+    padding: 0.8rem;
+    width: 90%;
+}
+
+.form textarea {
+    height: 70px;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+    margin-right: 6px;
+
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#000, #3d3b3b);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1rem;
+}
+
+.form input:required,
+.form select:required,
+.form input[type="radio"] {
+    border-bottom: solid 8px rgb(80, 1, 1);
+}
+
+.form input:required:valid,
+.form select:required:valid {
+    border-bottom: solid 8px rgb(2, 10, 2);
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #ccc;
+    padding: 5px;
+}
+
+#lastModified {
+    font-size: 0.75rem;
+    color: #f8d53b;
+    padding-top: 5px;
+}
+
+.numberreview {
+    padding-top: 15px;
+    height: 150px;
+}

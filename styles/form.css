@@ -88,6 +88,7 @@ footer {
     text-align: center;
     color: #ccc;
     padding: 5px;
+    margin-bottom: 1rem;
 }
 
 #lastModified {

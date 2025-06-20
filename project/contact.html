@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Raphia Mad'Art</title>
+    <meta name="description" content="Homepage Of Raphia Mad'art Wabsite for WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Tojofenitra Fabrice Andriambololontseheno">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Raphia Mad'Art</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="product.html" id="product">Our Products</a></li>
+                <li><a href="contact.html" class="active" id="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <picture>
+                <source srcset="images/product8.webp" media="(min-width: 800px)">
+                <img src="images/hero-small.webp" alt="Raffia image" width="450" height="150">
+            </picture>
+        </div>
+        <div class="contact">
+            <div class="information">
+                <h2>Raphia Mad'Art Information</h2>
+                <p><strong>Phone Number:</strong> +261123456789</p>
+                <p><strong>Address:</strong> Tana, Mada</p>
+            </div>
+            <div class="question">
+                <form action="contact.html" method="get" class="form">
+                    <label>Name*<input type="text" name="name" id="name" required></label>
+                    <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Question About*
+                        <select name="category" id="category" required>
+                            <option value="" disabled selected>Choose a Category... </option>
+                            <option value="raffiaSustainability">Raffia Sustainability </option>
+                            <option value="generalQuestion">General and other Questions </option>
+                        </select>
+                    </label>
+                    <label>Comment/Question*<textarea name="comment" id="comment" required></textarea></label>
+                    <input type="submit" value="Send Your Question">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="reference">Reference Site: <a
+                href="https://www.raphiartmalagasy.mg/">https://www.raphiartmalagasy.mg/</a></p>
+        <p><span id="currentyear"></span> - Tojofenitra Fabrice Andriambololontseheno - Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>

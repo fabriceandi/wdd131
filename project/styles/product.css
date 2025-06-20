@@ -1,0 +1,21 @@
+.link {
+    padding: 25px;
+    list-style: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: #7b3f00;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.link a:hover {
+    color: #0000009c;
+}
+
+.link .active {
+    color: #1b1212;
+    text-decoration: underline;
+}

@@ -1,0 +1,187 @@
+:root {
+    --fontFamily: "Lora", serif;
+    --colorParagraph: #1b1212;
+    --colorHeading: #b78e06;
+    --colorHeadings: #0000009c;
+    /*--colorHeadings: #7b3f00;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontFamily);
+    color: #1b1212;
+    padding: 10px;
+}
+
+header {
+    background-image: linear-gradient(#d9534f, #d1c3b0);
+    padding: 30px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 12px 10px 10px #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: none;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: rgba(250, 250, 250, 0.1);
+    color: #fff;
+}
+
+.active {
+    text-decoration: underline 4px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    margin-bottom: 1rem;
+}
+
+.hero {
+    background-color: #000;
+}
+
+.hero img {
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: var(--colorHeadings);
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+h3 {
+    color: #7b3f00;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 35px;
+}
+
+div p {
+    text-align: center;
+}
+
+.gallery {
+    margin: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    place-items: center;
+}
+
+figure {
+    background-color: #ccc;
+    padding: 15px;
+}
+
+figure img,
+section img {
+    width: 100%;
+    height: 350px;
+    border-radius: 6px;
+    animation: fade 6s;
+}
+
+section {
+    margin-top: 10px;
+    background-color: #ccc;
+    padding: 1rem;
+    width: 350px;
+}
+
+figcaption {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+main p {
+    color: var(--colorParagraph);
+    padding-top: 1rem;
+}
+
+footer {
+    background-color: #1b1212;
+    text-align: center;
+    color: #ccc;
+    padding: 15px;
+}
+
+.reference {
+    text-decoration: none;
+    color: #d9534f;
+    font-size: 1rem;
+    padding-bottom: 35px;
+}
+
+.reference a {
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+#lastModified {
+    font-size: 0.75rem;
+    color: #b78e06;
+    padding-top: 10px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

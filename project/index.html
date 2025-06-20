@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Raphia Mad'Art</title>
+    <meta name="description" content="Homepage Of Raphia Mad'art Wabsite for WDD 131 – Dynamic Web Fundamentals">
+    <meta name="author" content="Tojofenitra Fabrice Andriambololontseheno">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Raphia Mad'Art</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active" id="home">Home</a></li>
+                <li><a href="product.html" id="product">Our Products</a></li>
+                <li><a href="contact.html" id="contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+                <img src="images/hero-small.webp" alt="Raffia image" width="450" height="150">
+            </picture>
+        </div>
+        <div>
+            <h2>Welcome to Raphia Mad'Art Website</h2>
+            <p>The site highlights Malagasy products made from raffia, by providing information including image
+                galleries
+                with
+                differents accessories. Our primary purposes is to promote the beauty of this fiber, 100% natural
+                quality, handmade by local
+                artisans in Madagascar and to satisfy our customer's needs with thoses contemporary uses of
+                raffia.</p>
+        </div>
+        <h3>Categories of products</h3>
+        <div class="gallery">
+            <figure>
+                <img src="images/decoration.webp" alt="wall decoration" loading="lazy">
+                <figcaption>Wall Decoration</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product3.JPG" alt="bag raffia" loading="lazy">
+                <figcaption>Bag</figcaption>
+            </figure>
+            <figure>
+                <img src="images/product4.JPG" alt="mirror raffia" loading="lazy">
+                <figcaption>Mirror</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p class="reference">Reference Site:
+            <a href="https://www.raphiartmalagasy.mg/">https://www.raphiartmalagasy.mg/</a><br>
+        </p>
+        <p><span id="currentyear"></span> - Tojofenitra Fabrice Andriambololontseheno - Madagascar</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/base.js" defer></script>
+</body>
+
+</html>

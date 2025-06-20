@@ -15,7 +15,7 @@ const products = [
         category: "Mirror",
         name: "Mirror 1",
         imageSrc:
-            "images/product4.JPG"
+            "images/product4.jpg"
     },
     {
         category: "Bag",
@@ -27,7 +27,7 @@ const products = [
         category: "Bag",
         name: "Bag 3",
         imageSrc:
-            "images/product3.JPG"
+            "images/product3.jpg"
     },
     {
         category: "Mirror",
